@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body { font-family: Arial; text-align: center; padding: 50px; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Website!</h1>
+    <p>This site is hosted on Netlify.</p>
+    <p>More content coming soon!</p>
+</body>
+</html```
+4. Click **"Commit changes"**
+
+## **Step 2: Check Your Branch Name**
+
+From your image, I see you're using **`main`** branch (it's in the command: `git branch -m main`), so Netlify should be set to `main`. But let's verify:
+
+1. Go to **Netlify** → your site → **Site settings** → **Build & deploy**
+2. Under "Production branch", make sure it says `main`
+3. If it already says `main`, leave it as is
+
+## **Step 3: Trigger a New Deploy**
+
+After uploading files to GitHub:
+
+1. Go to Netlify dashboard
+2. Click **"Deploys"** tab
+3. Click **"Trigger deploy"** → **"Deploy site"**
+
+## **Step 4: Check the Result**
+
+Wait 1-2 minutes, then:
+1. Click on the new deploy in Netlify
+2. If it succeeds, click **"Preview"** to see your site
+3. Or visit your custom domain if you've set it up
+
+## **If You Still Get Errors:**
+
+Go to Netlify → **Deploys** → click on the failed build to see detailed error messages. Common issues:
+
+1. **No `index.html` file** - Make sure you have this file
+2. **Wrong build settings** - For basic HTML sites, you don't need build commands
+   - In Netlify: Build & deploy → Build settings
+   - **Build command:** (leave empty for HTML sites)
+   - **Publish directory:** `./` (or leave as is)
+
+## **Quick Checklist:**
+- [ ] Upload `index.html` to GitHub
+- [ ] Netlify branch = `main`
+- [ ] Trigger new deploy
+- [ ] Check deploy logs for errors
+
+**Do you have website files ready to upload, or do you need to create a basic website first?**
