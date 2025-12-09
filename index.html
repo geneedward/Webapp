@@ -1,57 +1,296 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Website</title>
-    <style>
-        body { font-family: Arial; text-align: center; padding: 50px; }
-        h1 { color: #333; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RELIANZ IT SOLUTION | IT Staffing & Consulting</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to My Website!</h1>
-    <p>This site is hosted on Netlify.</p>
-    <p>More content coming soon!</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <!-- Replace with your logo -->
+                <h1><span class="logo-highlight">RELIANZ</span> IT SOLUTION</h1>
+                <p class="tagline">Trusted IT Staffing & Consulting</p>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Trusted Partner for <span class="highlight">IT Talent Solutions</span></h1>
+                <p>Providing exceptional Network, System, Cloud, Security professionals and IT leadership for your business success</p>
+                <a href="#contact" class="btn-primary">Connect With Us</a>
+            </div>
+            <div class="hero-image">
+                <div class="floating-shapes">
+                    <div class="shape shape1"><i class="fas fa-network-wired"></i> Network</div>
+                    <div class="shape shape2"><i class="fas fa-cloud"></i> Cloud</div>
+                    <div class="shape shape3"><i class="fas fa-shield-alt"></i> Security</div>
+                    <div class="shape shape4"><i class="fas fa-users-cog"></i> Leadership</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-title">Our <span class="highlight">Services</span></h2>
+            <p class="section-subtitle">Full-time contractor positions across all IT domains</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network & Infrastructure</h3>
+                    <p>Expert network engineers, administrators, and NOC specialists for robust infrastructure solutions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>System Administration</h3>
+                    <p>Windows/Linux system admins, virtualization experts, and infrastructure support professionals.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>AWS, Azure, Google Cloud certified professionals for migration, management, and optimization.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cyber Security</h3>
+                    <p>SOC analysts, security engineers, compliance experts, and cybersecurity consultants.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>Service Desk & IT Support</h3>
+                    <p>Help desk technicians, desktop support, and IT service management professionals.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>IT Leadership</h3>
+                    <p>CTOs, IT Directors, Project Managers, and strategic technology leadership resources.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">About <span class="highlight">RELIANZ IT SOLUTION</span></h2>
+                
+                <div class="about-text">
+                    <p>At RELIANZ IT SOLUTION, we specialize in connecting exceptional IT talent with forward-thinking organizations. With a deep understanding of today's technology landscape, we provide contractor resources who seamlessly integrate with your teams to drive innovation and efficiency.</p>
+                    
+                    <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                    <p>To deliver unparalleled IT staffing solutions by understanding our clients' unique needs and providing highly skilled professionals who contribute to immediate business objectives while fostering long-term technological growth.</p>
+                    
+                    <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                    <p>To become the most trusted partner in IT consulting and staffing, recognized for our commitment to quality, reliability, and the measurable success we bring to every client engagement.</p>
+                    
+                    <h3><i class="fas fa-handshake"></i> Why Choose Us</h3>
+                    <ul class="features-list">
+                        <li><strong>Vetted Professionals:</strong> Rigorous screening ensuring technical excellence and cultural fit</li>
+                        <li><strong>Comprehensive Coverage:</strong> From help desk to C-suite leadership positions</li>
+                        <li><strong>Flexible Engagement:</strong> Full-time contractor models with scalable solutions</li>
+                        <li><strong>Industry Expertise:</strong> Deep knowledge across network, cloud, security, and infrastructure domains</li>
+                        <li><strong>Rapid Deployment:</strong> Quick turnaround without compromising on quality</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <h4>50+</h4>
+                    <p>Clients Served</p>
+                </div>
+                <div class="stat-item">
+                    <h4>200+</h4>
+                    <p>Professionals Placed</p>
+                </div>
+                <div class="stat-item">
+                    <h4>24/7</h4>
+                    <p>Support Available</p>
+                </div>
+                <div class="stat-item">
+                    <h4>98%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact <span class="highlight">Us</span></h2>
+            <p class="section-subtitle">Get in touch to discuss your IT staffing needs</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Office Address</h3>
+                            <p><!-- Add your address here --></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone Number</h3>
+                            <p><!-- Add your phone number here --></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email Address</h3>
+                            <p><!-- Add your email here --></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Business Hours</h3>
+                            <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                            <p>Emergency Support: 24/7</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" placeholder="Company Name">
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected>Service Interested In</option>
+                                <option value="network">Network Professionals</option>
+                                <option value="system">System Administrators</option>
+                                <option value="cloud">Cloud Solutions</option>
+                                <option value="security">Security Experts</option>
+                                <option value="support">IT Support/Service Desk</option>
+                                <option value="leadership">IT Leadership</option>
+                                <option value="multiple">Multiple Requirements</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message / Requirements" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3><span class="logo-highlight">RELIANZ</span> IT SOLUTION</h3>
+                    <p>Your trusted partner for IT talent and consulting solutions.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li>Network Professionals</li>
+                        <li>System Administrators</li>
+                        <li>Cloud Experts</li>
+                        <li>Security Specialists</li>
+                        <li>IT Support Staff</li>
+                        <li>Leadership Roles</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for IT insights</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> RELIANZ IT SOLUTION. All rights reserved.</p>
+                <p>Designed for excellence in IT staffing and consulting</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
-</html```
-4. Click **"Commit changes"**
-
-## **Step 2: Check Your Branch Name**
-
-From your image, I see you're using **`main`** branch (it's in the command: `git branch -m main`), so Netlify should be set to `main`. But let's verify:
-
-1. Go to **Netlify** → your site → **Site settings** → **Build & deploy**
-2. Under "Production branch", make sure it says `main`
-3. If it already says `main`, leave it as is
-
-## **Step 3: Trigger a New Deploy**
-
-After uploading files to GitHub:
-
-1. Go to Netlify dashboard
-2. Click **"Deploys"** tab
-3. Click **"Trigger deploy"** → **"Deploy site"**
-
-## **Step 4: Check the Result**
-
-Wait 1-2 minutes, then:
-1. Click on the new deploy in Netlify
-2. If it succeeds, click **"Preview"** to see your site
-3. Or visit your custom domain if you've set it up
-
-## **If You Still Get Errors:**
-
-Go to Netlify → **Deploys** → click on the failed build to see detailed error messages. Common issues:
-
-1. **No `index.html` file** - Make sure you have this file
-2. **Wrong build settings** - For basic HTML sites, you don't need build commands
-   - In Netlify: Build & deploy → Build settings
-   - **Build command:** (leave empty for HTML sites)
-   - **Publish directory:** `./` (or leave as is)
-
-## **Quick Checklist:**
-- [ ] Upload `index.html` to GitHub
-- [ ] Netlify branch = `main`
-- [ ] Trigger new deploy
-- [ ] Check deploy logs for errors
-
-**Do you have website files ready to upload, or do you need to create a basic website first?**
+</html>
